@@ -1,0 +1,262 @@
+body{
+
+	background-color: white;
+	/**Greay colour: #C0C0C0*/
+}
+
+
+#header{
+	position: absolute;
+	top: -1px;
+	left: 1px;
+	width: 1262px; /*width looks bad now  but we need tit to be a bit shorter so when the scrool bar happens it will look nicer*/
+	height: 60px;
+	background-color: white;
+	color: white;
+	box-shadow: 10px 10px 5px grey;
+	/*border: 10px blue solid;*/
+
+
+}
+
+
+
+#more{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+
+}
+
+#logo{
+	position: absolute;
+	left: 70px;
+	top: -2px;
+
+}
+
+
+
+#searchBar{
+	position: absolute;
+	left: 290px;
+	top: 10px;
+	height: 25px;
+	width: 500px;
+
+}
+
+#searchButton{
+	cursor: pointer;
+	position: absolute;
+	left: 794px;
+	top: 10px;
+	height: 31px;
+
+
+}
+
+
+/*might not put this*/
+#signIn:hover{
+
+	color: black;
+}
+
+
+
+#signIn{
+
+    /*seems like you cant make a button go to a html page for some reason so 
+    the only way would be to style the link to look like a button.*/
+    text-decoration: none;
+    cursor: pointer;
+    color: blue;
+    position: absolute;
+    left: 1170px;
+    top: 20px;
+
+}
+
+
+#advertisement{
+	
+	position: absolute;
+	top: 88px;
+	right: 150px;
+
+
+}
+
+#Recommended{
+
+	font-size: 20px;
+	position: absolute;
+	top: 350px;
+	left: 145px;
+	
+
+}
+
+#r-thumbnail1{
+
+	position: absolute;
+	top: 390px;
+	left: 145px;
+}
+
+#r-thumbnail2{
+
+	position: absolute;
+	top: 390px;
+	left: 345px;
+}
+
+#r-thumbnail3{
+
+	position: absolute;
+	top: 390px;
+	left: 545px;
+}
+
+#r-thumbnail4{
+
+	position: absolute;
+	top: 390px;
+	left: 745px;
+}
+
+#r-thumbnail5{
+
+	position: absolute;
+	top: 390px;
+	left: 945px;
+}
+
+/*Starting here I need to put some classes*/
+
+/*all video titles have these, at the end I will look over the code and see what other classes I can add*/
+.r-videoTitles{
+	color: black;
+	max-width: 180px;
+	text-decoration: none;
+	position: absolute;
+	top: 500px;
+
+
+}
+
+#r-title1{
+
+	left: 150px;
+
+	
+}
+
+#r-title2{
+
+	left: 350px;
+
+	
+}
+
+#r-title3{
+
+	font-size: 15px;
+	left: 550px;
+
+	
+}
+
+#r-title4{
+
+	left: 750px;
+	
+}
+
+#r-title5{
+
+	left: 950px;
+
+	
+}
+
+
+.r-channelName{
+	color: grey;
+	text-decoration: none;
+	position: absolute;
+	top: 525px; /*More vodeos have 520px then 544px*/
+	font-size: 13px;
+	max-width: 180px;
+
+
+}
+
+
+#r-channelName1{
+	top: 544px;
+	left: 150px;
+
+}
+
+#r-channelName2{
+	left: 350px;
+
+}
+
+#r-channelName3{
+	top: 544px;
+	left: 550px;
+
+}
+
+#r-channelName4{
+	left: 750px;
+
+}
+
+#r-channelName5{
+	left: 950px;
+
+}
+.r-views{
+	color: grey;
+	text-decoration: none;
+	position: absolute;
+	font-size: 13px;
+	top: 528px;
+
+}
+
+#r-views1{
+	top: 547px;
+	left: 150px;
+
+
+}
+
+#r-views2{
+	left: 350px;
+
+	
+}
+
+#r-views3{
+	top: 547px;
+	left: 550px;
+
+	
+}
+
+#r-views4{
+	left: 750px;
+
+	
+}
+
+#r-views5{
+	left: 950px;
+
+	
+}
