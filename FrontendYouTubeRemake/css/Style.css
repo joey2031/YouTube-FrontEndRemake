@@ -98,42 +98,38 @@ body{
 
 }
 
-#r-thumbnail1{
 
+.r-thumbNails{
 	position: absolute;
 	top: 390px;
+}
+
+#r-thumbnail1{
+
 	left: 145px;
 }
 
+
 #r-thumbnail2{
 
-	position: absolute;
-	top: 390px;
 	left: 345px;
 }
 
 #r-thumbnail3{
 
-	position: absolute;
-	top: 390px;
 	left: 545px;
 }
 
 #r-thumbnail4{
 
-	position: absolute;
-	top: 390px;
 	left: 745px;
 }
 
 #r-thumbnail5{
 
-	position: absolute;
-	top: 390px;
 	left: 945px;
 }
 
-/*Starting here I need to put some classes*/
 
 /*all video titles have these, at the end I will look over the code and see what other classes I can add*/
 .r-videoTitles{
