@@ -12,6 +12,16 @@
 
 }
 
+#SignInText{
+
+    font-size: 25px;
+	position: absolute;
+	left: 155px;
+	top: 40px;
+
+}
+
+
 #usernameOrEmail{
 
 	width: 200px;
@@ -25,14 +35,6 @@
 
 }
 
-#SignIn{
-
-    font-size: 25px;
-	position: absolute;
-	left: 155px;
-	top: 40px;
-
-}
 
 #password{
 	width: 200px;
@@ -44,3 +46,22 @@
 
 
 }
+
+#signinButton{
+	position: absolute;
+	top: 300px;
+	left: 170px;
+	width: 70px;
+	height: 30px;
+	border: none;
+	border-radius: 5px;
+	background-color: #4487FA;
+	color: white;
+
+	/*good chrome extension for colours: ColorZilla*/
+
+
+
+}
+
+

@@ -71,7 +71,7 @@ body{
     the only way would be to style the link to look like a button.*/
     text-decoration: none;
     cursor: pointer;
-    color: blue;
+    color: #065FD4;
     position: absolute;
     left: 1170px;
     top: 20px;
@@ -254,5 +254,80 @@ body{
 #r-views5{
 	left: 950px;
 
+	
+}
+
+.dot{
+	color: grey;
+	position: absolute;
+}
+
+#dot{
+	top: 534px;
+	left: 218px;
+
+
+}
+
+#dot2{
+	top: 515px;
+	left: 412px;
+
+}
+
+#dot3{
+	top: 533px;
+	left: 612px;
+
+}
+
+#dot4{
+	top: 515px;
+	left: 817px;
+
+}
+
+#dot5{
+	top: 515px;
+	left: 1017px;
+
+}
+
+/*TOOD: think of a good ame and make a class for the date, dot and views*/
+.date{
+	font-weight: normal;
+	color: grey;
+	position: absolute;
+
+}
+
+
+#date{
+	top: 537px;
+	left: 225px;
+
+}
+
+#date2{
+	top: 519px;
+	left: 420px;
+
+}
+
+#date3{
+	top: 537px;
+	left: 620px;
+	
+}
+
+#date4{
+	top: 519px;
+	left: 825px;
+	
+}
+
+#date5{
+	top: 519px;
+	left: 1025px;
 	
 }
