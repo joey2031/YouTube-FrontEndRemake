@@ -1,27 +1,82 @@
 body{
 
 	background-color: white;
+	overflow-x:  hidden; /*for no scroll feature*/
 	/**Greay colour: #C0C0C0*/
 }
 
 
-#header{
-	position: absolute;
-	top: -1px;
-	left: 1px;
-	width: 1262px; /*width looks bad now  but we need tit to be a bit shorter so when the scrool bar happens it will look nicer*/
-	height: 60px;
-	background-color: white;
-	color: white;
-	box-shadow: 10px 10px 5px grey;
-	/*border: 10px blue solid;*/
+.nav{
+   height: 100%;
+   width: 0; 
+   position: fixed;
+   /*all the way to the left
+    z-index: 1; pushes it on top of the background
+   */
+   z-index: 1;
+   top: 0;
+   left: 0;
+   background-color: #111;
+   opacity: .9;
+   overflow-x: hidden; /*look on google may be ablue to do use this for a side scrool bar*/
+   padding-top: 60px; 	
+   transition: 0.7s; /*will take 0.7 seconds to slide out.*/
+
+}
+
+.nav a{ /*all links in the nav class*/
+
+display: block;
+
+/*padding: 20px, 30px; 20px top bottom, and 30px left right, for some reason it didnt effect it like this.*/
+padding-top: 10px;
+font-size: 25px;
+text-decoration: none;
+color: #ccc;
 
 
 }
 
+.nav a:hover{
+	color: #fff;
+	transition: 0.4s; /*so it wont go to white right away, there will be a bit of a transition*/
+}
+
+.nav .close{
+
+	position: absolute;
+	top: 0px;
+	right: 22px;
+	margin-left: 50px;
+	font-size: 30px;
+}
+
+.slide a{ /*for the burger menue*/
+	color: #000;
+	font-size: 36px;
+
+}
+
+#content{ /*burger menue has the same transition as the close menue, I noticed there is no content in the html it onlt pops up in the javascript??*/
+
+	padding: 20px;
+	transition: margin-left 0.7s;
+	overflow: hidden; /*so the responsixe text dosent break up.*/
+}
 
 
-#more{
+#header{
+
+	position: absolute;
+	top: -1px;
+	left: 1px;
+	width: 1262px;
+	color: white;
+	height: 60px; /*For some reason the height messes up the nav bar*/
+	box-shadow: 10px 10px 5px grey;
+}
+
+#moreImage{
 	position: absolute;
 	top: 15px;
 	left: 15px;
@@ -79,6 +134,9 @@ body{
 }
 
 
+
+/*I noticed I am only using left, but is there a certin point where I sould use right??*/
+
 #advertisement{
 	
 	position: absolute;
@@ -98,10 +156,17 @@ body{
 
 }
 
+/*VIDEO THUMBNAILS*/
+/*check: there might be a better way to do the horinzantal positioning with js*/
 
-.r-thumbNails{
+.r-thumbNailsRow1{
 	position: absolute;
 	top: 390px;
+}
+
+.r-thumbNailsRow2{
+	position: absolute;
+	top: 590px;
 }
 
 #r-thumbnail1{
@@ -125,11 +190,39 @@ body{
 	left: 745px;
 }
 
-#r-thumbnail5{
+#r-thumbnail5{ /*last video of first row*/
 
 	left: 945px;
 }
 
+#r-thumbnail6{
+
+	left: 145px;
+}
+
+
+#r-thumbnail7{
+
+	left: 345px;
+}
+
+#r-thumbnail8{
+
+	left: 545px;
+}
+
+#r-thumbnail9{
+
+	left: 745px;
+}
+
+#r-thumbnail10{
+
+	left: 945px;
+}
+
+
+/*VIDEO TITLES*/
 
 /*all video titles have these, at the end I will look over the code and see what other classes I can add*/
 .r-videoTitles{
@@ -140,6 +233,15 @@ body{
 	top: 500px;
 
 
+}
+
+.r-videoTitlesRow2{
+	color: black;
+	max-width: 180px;
+	text-decoration: none;
+	position: absolute;
+	top: 700px;
+	
 }
 
 #r-title1{
@@ -170,10 +272,37 @@ body{
 	
 }
 
-#r-title5{
+#r-title5{ /*last title of first row*/
 
 	left: 950px;
 
+	
+}
+
+
+#r-title6{
+	left:150px;
+
+}
+
+#r-title7{
+	top: 696px;
+	left: 350px;
+	
+}
+
+#r-title8{
+	left: 550px;
+	
+}
+
+#r-title9{
+	left: 750px;
+	
+}
+
+#r-title10{
+	left: 950px;
 	
 }
 
@@ -188,7 +317,17 @@ body{
 
 
 }
+.r-channelNameRow2{
+	color: grey;
+	text-decoration: none;
+	position: absolute;
+	font-size: 13px;
+	max-width: 180px;
 
+
+}
+
+/*CHANNEL NAMES*/
 
 #r-channelName1{
 	top: 544px;
@@ -216,12 +355,55 @@ body{
 	left: 950px;
 
 }
+
+#r-channelName6{
+	top: 763px;
+	left: 150px;
+	
+}
+
+#r-channelName7{
+	top: 763px;
+	left: 350px;
+
+}
+
+#r-channelName8{
+	top: 730px;
+	left: 550px;
+	
+}
+
+#r-channelName9{
+	top: 750px;
+	left: 750px;
+	
+}
+
+#r-channelName10{
+	top: 750px;
+	left: 950px;
+	
+}
+
+
+
+
+/*VIDEO VIEWS*/
 .r-views{
 	color: grey;
 	text-decoration: none;
 	position: absolute;
 	font-size: 13px;
 	top: 528px;
+
+}
+
+.r-viewsRow2{
+	color: grey;
+	text-decoration: none;
+	position: absolute;
+	font-size: 13px;
 
 }
 
@@ -256,6 +438,44 @@ body{
 
 	
 }
+
+
+#r-views6{
+	top: 768px;
+	left: 150px;
+
+
+}
+
+#r-views7{
+	top: 768px;
+	left: 350px;
+
+	
+}
+
+#r-views8{
+	top: 735px;
+	left: 550px;
+
+	
+}
+
+#r-views9{
+	top: 755px;
+	left: 750px;
+
+	
+}
+
+#r-views10{
+	top: 755px;
+	left: 950px;
+
+	
+}
+
+/*DONT BETWEEN VIDES AND DATE*/
 
 .dot{
 	color: grey;
@@ -293,7 +513,50 @@ body{
 
 }
 
-/*TOOD: think of a good ame and make a class for the date, dot and views*/
+
+#dot6{
+	top: 756px;
+	left: 212px;
+
+
+
+}
+
+
+#dot7{
+	top: 755px;
+	left: 418px;
+
+
+}
+
+
+#dot8{
+	top: 722px;
+	left: 612px;
+
+
+}
+
+
+#dot9{
+	top: 742px;
+	left: 813px;
+
+
+}
+
+
+#dot10{
+	top: 742px;
+	left: 1012px;
+
+
+}
+
+
+/*VIDEO UPLOAD DATES*/
+/*TOOD: think of a good name and make a class for the date, dot and views*/
 .date{
 	font-weight: normal;
 	color: grey;
@@ -303,7 +566,7 @@ body{
 
 
 #date{
-	top: 537px;
+	top: 538px;
 	left: 225px;
 
 }
@@ -331,3 +594,36 @@ body{
 	left: 1025px;
 	
 }
+
+#date6{
+	top: 759px;
+	left: 220px;
+
+}
+
+#date7{
+	top: 759px;
+	left: 426px;
+
+}
+
+#date8{
+	top: 725px;
+	left: 620px;
+	
+}
+
+#date9{
+	top: 746px;
+	left: 820px;
+	
+}
+
+#date10{
+	top: 746px;
+	left: 1020px;
+	
+}
+
+
+/*For a scrool bar try over flow.*/

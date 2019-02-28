@@ -3,71 +3,179 @@
 <head>
 	<title>YouTube</title>
 	<link rel="stylesheet" type="text/css" href="css/Style.css">
+
+
+	<!--we add this so we can use the icons.-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+	<title>Nav bar</title>
+
+	<script type="text/javascript" src= "Script.js"></script>
+
 </head>
-
-
 <body>
+
 	<!--also not sure whats suspose to go in the header.-->
 	<div id=header>
 
 		<!--should I be doing the image resising in html or css??-->
-		<img id="more" src="images/3lines.png" alt= "unable to load image" width= "25" height= "25">
+		<!--when I am  done with the nav make sure to delete this from the image file and delete this line-->
+		<!--<img id="moreImage" src="images/3lines.png" alt= "unable to load image" width= "25" height= "25">-->	
 		<img id= logo src="images/logo.png" alt="unable to load image" width="130" height="60">
 		<input id= "searchBar" type="text" name="search" placeholder="search">
 		<button id= "searchButton" type= "button">search</button> 
 		<a id="signIn" href="SignInPage.html">SIGN IN</a>
-		<!--<button id=signIn>SIGN IN</button>-->		
-	</div>
 
 
 
-	<img id="advertisement" src="images/ad.jpg" alt="unable to load image" width= "990" height= "260">
-	<h1 id="Recommended">Recommended</h1>
+          <!--this only works if I out it in the header is there a way to do this outside??-->
+		<div id= "navContainer">
 
-	<div> 
-		<!--r-thumbnail1: recommended thumbnail, r-videoTitle: title of recommended video -->
-		<img class="r-thumbNails" id="r-thumbnail1" src="images/thumbnail.jpg" alt="unable to load image" width= "190" height= "100">
-		<a class= "r-videoTitles" id="r-title1" href="#">Charlie bit my finger - again!</a>
-		<a class="r-channelName" id="r-channelName1" href="#">HDCYT</a>
-		<p class= r-views id="r-views1">867M views</p> <!--Im not sure what kind of tag I should make this--->
+			<span class="slide">
+				<a href="#" onClick= "openSlideMenue()">
+					<i class="fas fa-bars"></i>
+				</a>
+			</span>
 
-		<img class= "r-thumbNails" id="r-thumbnail2" src="images/thumbnail.jpg" alt="unable to load image" width= "190" height= "100">
-		<a class= "r-videoTitles" id="r-title2" href="#">Me at the Zoo</a>
-		<a class="r-channelName" id="r-channelName2" href="#">jawed</a>
-		<p class= r-views id="r-views2">42M views</p>
+			<div id="menu" class="nav">
+				<a href="#" class="close" onClick="closeSlideMenue()">
+					<i class="fas fa-times"></i>
+				</a>
 
-		<img class="r-thumbNails" id="r-thumbnail3" src="images/thumbnail.jpg" alt="unable to load image" width= "190" height= "100">
-		<a class= "r-videoTitles" id="r-title3" href="#">PSY - GANGNAM STYLE(강남스타일) M/V</a>
-		<a class="r-channelName" id="r-channelName3" href="#">officialpsy</a>
-		<p class= r-views id="r-views3">3.2B views</p>
+				<a href="#">Home</a>
+				<a href="#">About</a>
+				<a href="#">Services</a>
+				<a href="#">Portfilio</a>
+				<a href="#">contact</a>
+			</div>
+		</div>
 
-		<img class= "r-thumbNails" id="r-thumbnail4" src="images/thumbnail.jpg" alt="unable to load image" width= "190" height= "100">
-		<a class= "r-videoTitles" id="r-title4" href="#">Evolution of Dance</a>
-		<a class="r-channelName" id="r-channelName4" href="#">Judson Laipply</a>
-		<p class= r-views id="r-views4">304M views</p>
-
-		<img class= "r-thumbNails" id="r-thumbnail5" src="images/thumbnail.jpg" alt="unable to load image" width= "190" height= "100">
-		<a class= "r-videoTitles" id="r-title5" href="#">David After Dentist!</a>
-		<a class="r-channelName" id="r-channelName5" href="#">booba1234</a>
-		<p class= r-views id="r-views5">138M views</p>
 
 	</div>
 
 
 
 
-	<!--Mabey out these in the above div later.-->
-	<h3 class="dot" id="dot">.</h3>
-	<h3 class="dot" id="dot2">.</h3>
-	<h3 class="dot" id="dot3">.</h3>
-	<h3 class="dot" id="dot4">.</h3>
-	<h3 class="dot" id="dot5">.</h3>
 
-	<h5 class="date" id="date">10 years ago</h5>
-	<h5 class="date" id="date2">14 years ago</h5>
-	<h5 class="date" id="date3">7 years ago</h5>
-	<h5 class="date" id="date4">12 years ago</h5>
-	<h5 class="date" id="date5">10 years ago</h5>
+
+<!--
+
+	</div>
+
+
+		<div id= "navContainer">
+
+		<span class="slide">
+			<a href="#" onClick= "openSlideMenue()">
+				<i class="fas fa-bars"></i>
+			</a>
+		</span>
+
+		<div id="menu" class="nav">
+			<a href="#" class="close" onClick="closeSlideMenue()">
+				<i class="fas fa-times"></i>
+			</a>
+
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Services</a>
+			<a href="#">Portfilio</a>
+			<a href="#">contact</a>
+		</div>
+	</div>
+
+-->
+
+<img id="advertisement" src="images/ad.jpg" alt="unable to load image" width= "990" height= "260">
+<h1 id="Recommended">Recommended</h1>
+
+<div> 
+	<!--r-thumbnail1: recommended thumbnail, r-videoTitle: title of recommended video -->
+	<img class="r-thumbNailsRow1" id="r-thumbnail1" src="images/thumbnail.jpg" alt="unable to load image" width= "190" height= "100">
+	<a class= "r-videoTitles" id="r-title1" href="#">Charlie bit my finger - again!</a>
+	<a class="r-channelName" id="r-channelName1" href="#">HDCYT</a>
+	<p class= "r-views" id="r-views1">867M views</p> <!--Im not sure what kind of tag I should make this--->
+
+	<img class= "r-thumbNailsRow1" id="r-thumbnail2" src="images/thumbnail.jpg" alt="unable to load image" width= "190" height= "100">
+	<a class= "r-videoTitles" id="r-title2" href="#">Me at the Zoo</a>
+	<a class="r-channelName" id="r-channelName2" href="#">jawed</a>
+	<p class= "r-views" id="r-views2">42M views</p>
+
+	<img class="r-thumbNailsRow1" id="r-thumbnail3" src="images/thumbnail.jpg" alt="unable to load image" width= "190" height= "100">
+	<a class= "r-videoTitles" id="r-title3" href="#">PSY - GANGNAM STYLE(강남스타일) M/V</a>
+	<a class="r-channelName" id="r-channelName3" href="#">officialpsy</a>
+	<p class= "r-views" id="r-views3">3.2B views</p>
+
+	<img class= "r-thumbNailsRow1" id="r-thumbnail4" src="images/thumbnail.jpg" alt="unable to load image" width= "190" height= "100">
+	<a class= "r-videoTitles" id="r-title4" href="#">Evolution of Dance</a>
+	<a class="r-channelName" id="r-channelName4" href="#">Judson Laipply</a>
+	<p class= "r-views" id="r-views4">304M views</p>
+
+	<img class= "r-thumbNailsRow1" id="r-thumbnail5" src="images/thumbnail.jpg" alt="unable to load image" width= "190" height= "100">
+	<a class= "r-videoTitles" id="r-title5" href="#">David After Dentist!</a>
+	<a class="r-channelName" id="r-channelName5" href="#">booba1234</a>
+	<p class= "r-views" id="r-views5">138M views</p>
+
+	<!--row 2 of the recommended thumbnails-->
+	<img class= "r-thumbNailsRow2" id="r-thumbnail6" src="images/thumbnail.jpg" alt="unable to load image" width= "190" height= "100">
+	<a class= "r-videoTitlesRow2" id= "r-title6" href="#">Charlie Schmidt's Keyboard Cat! - THE ORIGINAL!</a>
+	<a class="r-channelNameRow2" id="r-channelName6" href="#">Keyboard Cat</a>
+	<p class= "r-viewsRow2" id="r-views6">53M views</p>
+
+	<img class= "r-thumbNailsRow2" id="r-thumbnail7" src="images/thumbnail.jpg" alt="unable to load image" width= "190" height= "100">
+	<a class= "r-videoTitlesRow2" id= "r-title7" href="#">Baby Laughing Hysterically at Ripping Paper (Original)</a>
+	<a class="r-channelNameRow2" id="r-channelName7" href="#">BruBearBaby</a>
+	<p class= "r-viewsRow2" id="r-views7">101M views</p>
+
+	<img class= "r-thumbNailsRow2" id="r-thumbnail8" src="images/thumbnail.jpg" alt="unable to load image" width= "190" height= "100">
+	<a class= "r-videoTitlesRow2" id= "r-title8" href="#">Numa Numa</a>
+	<a class="r-channelNameRow2" id="r-channelName8" href="#">Dork Daily</a>
+	<p class= "r-viewsRow2" id="r-views8">32M views</p>
+
+	<img class= "r-thumbNailsRow2" id="r-thumbnail9" src="images/thumbnail.jpg" alt="unable to load image" width= "190" height= "100">
+	<a class= "r-videoTitlesRow2" id= "r-title9" href="#">The Gummy Bear Song - Long English Version</a>
+	<a class="r-channelNameRow2" id="r-channelName9" href="#">icanrockyourworld</a>
+	<p class= "r-viewsRow2" id="r-views9">1.6B views</p>
+
+
+	<img class= "r-thumbNailsRow2" id="r-thumbnail10" src="images/thumbnail.jpg" alt="unable to load image" width= "190" height= "100">
+	<a class= "r-videoTitlesRow2" id= "r-title10" href="#">It's Peanut Butter Jelly Time!!!</a>
+	<a class="r-channelNameRow2" id="r-channelName10" href="#">AlbinoBlackSheep</a>
+	<p class= "r-viewsRow2" id="r-views10">47M views</p>
+
+
+
+</div>
+
+
+
+
+<!--Mabey put these in the above div later.-->
+<h3 class="dot" id="dot">.</h3>
+<h3 class="dot" id="dot2">.</h3>
+<h3 class="dot" id="dot3">.</h3>
+<h3 class="dot" id="dot4">.</h3>
+<h3 class="dot" id="dot5">.</h3>
+<h3 class="dot" id="dot6">.</h3>
+<h3 class="dot" id="dot7">.</h3>
+<h3 class="dot" id="dot8">.</h3>
+<h3 class="dot" id="dot9">.</h3>
+<h3 class="dot" id="dot10">.</h3>
+
+<h5 class="date" id="date">10 years ago</h5>
+<h5 class="date" id="date2">14 years ago</h5>
+<h5 class="date" id="date3">7 years ago</h5>
+<h5 class="date" id="date4">12 years ago</h5>
+<h5 class="date" id="date5">10 years ago</h5>
+
+<!--POSITIONOING FOR DOTS AND CHANNEL NAMES IN ROW 2 IS ALL WRONG!!!-->
+
+<h5 class="date" id="date6">11 years ago</h5>
+<h5 class="date" id="date7">8 years ago</h5>
+<h5 class="date" id="date8">12 years ago</h5>
+<h5 class="date" id="date9">11 years ago</h5>
+<h5 class="date" id="date10">10 years ago</h5>
 
 
 
