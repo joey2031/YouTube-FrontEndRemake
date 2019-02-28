@@ -16,11 +16,11 @@ body{
    z-index: 1;
    top: 0;
    left: 0;
-   background-color: #111;
-   opacity: .9;
+   background-color: #F5F5F5; 
    overflow-x: hidden; /*look on google may be ablue to do use this for a side scrool bar*/
    padding-top: 60px; 	
    transition: 0.7s; /*will take 0.7 seconds to slide out.*/
+   /*dont think I need to play with the opacity*/
 
 }
 
@@ -38,7 +38,7 @@ color: #ccc;
 }
 
 .nav a:hover{
-	color: #fff;
+	color: blue; /*#fff*/
 	transition: 0.4s; /*so it wont go to white right away, there will be a bit of a transition*/
 }
 
@@ -46,14 +46,20 @@ color: #ccc;
 
 	position: absolute;
 	top: 0px;
-	right: 22px;
+	left: -20px;
 	margin-left: 50px;
 	font-size: 30px;
+	color: black;
 }
 
-.slide a{ /*for the burger menue*/
+.slide a{ /*for the burger menue, we did this since its in the a tag.*/
 	color: #000;
-	font-size: 36px;
+	position: absolute;
+	top: 20px;
+	left: 25px;
+	color: #606060;
+	font-size: 20px;
+
 
 }
 
