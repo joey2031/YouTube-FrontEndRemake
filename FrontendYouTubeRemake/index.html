@@ -16,82 +16,77 @@
 </head>
 <body>
 
+
 	<!--also not sure whats suspose to go in the header.-->
 	<div id=header>
 
-		<!--should I be doing the image resising in html or css??-->
-		<!--when I am  done with the nav make sure to delete this from the image file and delete this line-->
-		<!--<img id="moreImage" src="images/3lines.png" alt= "unable to load image" width= "25" height= "25">-->	
+
+		<!--How can I make this be under the headder??-->
+		<div id= "navContainer">
+
+			<span class="slide">
+				<a href="#" onClick= "openSlideMenue()"> 
+					<i class="fas fa-bars"></i>
+				</a>
+			</span>
+
+
+			<div id="menu" class="nav">
+
+				<a href="#" class="close" onClick="closeSlideMenue()">
+					<i class="fas fa-bars"></i>
+				</a>
+				
+
+
+				<!--anything you want in the box you put here??-->
+
+				<a href="#">Home</a>
+				<a href="#">Treding</a>
+				<a href="#">History</a>
+				<hr>
+				<h1>Best of youtube</h1>
+				<a href="#">Best of youTube</a> <!--Make h1 somehow-->
+				<a href="#">Music</a>
+				<a href="#">Sports</a>
+				<a href="#">Gaming</a>
+				<a href="#">Movies</a>
+				<a href="#">TV Shows</a>
+				<a href="#">Live</a>
+				<a href="#">360 video</a>
+				<hr>
+				<a href="#">Browse Channels</a>>
+				<hr>
+				<a href="#">Sign in now to see your<br/>channels and<br/>recommendations!</a>  <!--make h1 somehow-->
+				<a href="#">Sign In</a>>
+				<hr>
+				<a href="#">MORE FROM YOUTUBE</a> <!--make h1 somehow-->
+				<a href="#">YouTube Premium</a>
+				<a href="#">Live</a>
+				<hr>
+				<a href="#">Settings</a>
+				<a href="#">Report history</a>
+				<a href="#">Help</a>
+				<a href="#">Send feedback</a>
+				<hr>
+
+			</div>
+		</div>
+
+
+
+
+		<!--should I be doing the image resising in html or css??-->	
 		<img id= logo src="images/logo.png" alt="unable to load image" width="130" height="60">
 		<input id= "searchBar" type="text" name="search" placeholder="search">
 		<button id= "searchButton" type= "button">search</button> 
 		<a id="signIn" href="SignInPage.html">SIGN IN</a>
 
 
-
-		<!--this only works if I out it in the header is there a way to do this outside??-->
-		<div id= "navContainer">
-
-			<span class="slide">
-				<a href="#" onClick= "openSlideMenue()">
-					<i class="fas fa-bars"></i>
-				</a>
-			</span>
-
-			<div id="menu" class="nav">
-				<a href="#" class="close" onClick="closeSlideMenue()">
-					<i class="fas fa-bars"></i>
-					<!--original: fas fa-times-->
-				</a>
-
-
-				<!--anything you want in the box you put here??-->
-
-				<img id= logo src="images/logo.png" alt="unable to load image" width="130" height="60">
-
-				<a href="#">Home</a>
-				<a href="#">About</a>
-				<a href="#">Services</a>
-				<a href="#">Portfilio</a>
-				<a href="#">contact</a>
-			</div>
-		</div>
-
-
 	</div>
 
 
 
-
-
-
-<!--
-
-	</div>
-
-
-		<div id= "navContainer">
-
-		<span class="slide">
-			<a href="#" onClick= "openSlideMenue()">
-				<i class="fas fa-bars"></i>
-			</a>
-		</span>
-
-		<div id="menu" class="nav">
-			<a href="#" class="close" onClick="closeSlideMenue()">
-				<i class="fas fa-times"></i>
-			</a>
-
-			<a href="#">Home</a>
-			<a href="#">About</a>
-			<a href="#">Services</a>
-			<a href="#">Portfilio</a>
-			<a href="#">contact</a>
-		</div>
-	</div>
-
--->
 
 <img id="advertisement" src="images/ad.jpg" alt="unable to load image" width= "990" height= "260">
 <h1 id="Recommended">Recommended</h1>

@@ -1,10 +1,21 @@
 body{
 
 	background-color: white;
-	overflow-x:  hidden; /*for no scroll feature*/
-	/**Greay colour: #C0C0C0*/
+
+
+	overflow-x:  hidden; 
+
+	/*for no scroll feature*/
 }
 
+
+
+/*
+
+
+NEED TO SEE WHY RESPONSIVE TEXT ISNT WORKING.
+
+*/
 
 .nav{
    height: 100%;
@@ -14,13 +25,15 @@ body{
     z-index: 1; pushes it on top of the background
    */
    z-index: 1;
-   top: 0;
+   top: 50px;
    left: 0;
    background-color: #F5F5F5; 
    overflow-x: hidden; /*look on google may be ablue to do use this for a side scrool bar*/
    padding-top: 60px; 	
    transition: 0.7s; /*will take 0.7 seconds to slide out.*/
    /*dont think I need to play with the opacity*/
+
+
 
 }
 
@@ -30,16 +43,18 @@ display: block;
 
 /*padding: 20px, 30px; 20px top bottom, and 30px left right, for some reason it didnt effect it like this.*/
 padding-top: 10px;
-font-size: 25px;
+font-size: 15px;
 text-decoration: none;
-color: #ccc;
+color: black;
 
 
 }
 
 .nav a:hover{
-	color: blue; /*#fff*/
-	transition: 0.4s; /*so it wont go to white right away, there will be a bit of a transition*/
+
+	
+	background-color: #DCDCDC;
+	/*transition: 0.4s; so it wont go to white right away, there will be a bit of a transition*/
 }
 
 .nav .close{
@@ -52,7 +67,7 @@ color: #ccc;
 	color: black;
 }
 
-.slide a{ /*for the burger menue, we did this since its in the a tag.*/
+.slide a{ /*for the burger menue, we did this since its in the a tag. all the links in the slide class*/
 	color: #000;
 	position: absolute;
 	top: 20px;
@@ -63,11 +78,11 @@ color: #ccc;
 
 }
 
-#content{ /*burger menue has the same transition as the close menue, I noticed there is no content in the html it onlt pops up in the javascript??*/
+#navContainer{ /*burger menue has the same transition as the close menue*/
 
 	padding: 20px;
 	transition: margin-left 0.7s;
-	overflow: hidden; /*so the responsixe text dosent break up.*/
+	overflow: hidden; 
 }
 
 
