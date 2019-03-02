@@ -1,11 +1,7 @@
 body{
 
 	background-color: white;
-
-
-	overflow-x:  hidden; 
-
-	/*for no scroll feature*/
+    
 }
 
 
@@ -21,31 +17,39 @@ NEED TO SEE WHY RESPONSIVE TEXT ISNT WORKING.
    height: 100%;
    width: 0; 
    position: fixed;
-   /*all the way to the left
-    z-index: 1; pushes it on top of the background
-   */
    z-index: 1;
    top: 50px;
    left: 0;
    background-color: #F5F5F5; 
-   overflow-x: hidden; /*look on google may be ablue to do use this for a side scrool bar*/
    padding-top: 60px; 	
+   overflow: auto;
    transition: 0.7s; /*will take 0.7 seconds to slide out.*/
-   /*dont think I need to play with the opacity*/
 
+/*overflow auto means if the content goes past the box/ hrough the page, add a scroll bar*/
+   /*all the way to the left
+    z-index: 1; pushes it on top of the background
+   */
+
+}
+
+.nav h1{ /*all h1's in the nav class*/
+font-size: 20px;
+font-weight: normal;
 
 
 }
 
 .nav a{ /*all links in the nav class*/
 
-display: block;
 
 /*padding: 20px, 30px; 20px top bottom, and 30px left right, for some reason it didnt effect it like this.*/
+height: 30px;
 padding-top: 10px;
 font-size: 15px;
 text-decoration: none;
 color: black;
+display: block;
+
 
 
 }
@@ -76,14 +80,18 @@ color: black;
 	font-size: 20px;
 
 
+
 }
 
 #navContainer{ /*burger menue has the same transition as the close menue*/
 
 	padding: 20px;
 	transition: margin-left 0.7s;
-	overflow: hidden; 
+
+
 }
+
+
 
 
 #header{
@@ -96,6 +104,7 @@ color: black;
 	height: 60px; /*For some reason the height messes up the nav bar*/
 	box-shadow: 10px 10px 5px grey;
 }
+
 
 #moreImage{
 	position: absolute;
