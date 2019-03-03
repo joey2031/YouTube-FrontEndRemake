@@ -1,7 +1,7 @@
 body{
 
 	background-color: white;
-    
+
 }
 
 
@@ -14,21 +14,21 @@ NEED TO SEE WHY RESPONSIVE TEXT ISNT WORKING.
 */
 
 .nav{
-   height: 100%;
-   width: 0; 
-   position: fixed;
-   z-index: 1;
-   top: 50px;
-   left: 0;
-   background-color: #F5F5F5; 
-   padding-top: 60px; 	
-   overflow: auto;
-   transition: 0.7s; /*will take 0.7 seconds to slide out.*/
+	height: 100%;
+	width: 0; 
+	position: fixed;
+	z-index: 1;
+	top: 50px;
+	left: 0;
+	background-color: #F5F5F5; 
+	padding-top: 60px; 	
+	overflow: auto;
+	transition: 0.7s; /*will take 0.7 seconds to slide out.*/
 
-/*overflow auto means if the content goes past the box/ hrough the page, add a scroll bar*/
+	/*overflow auto means if the content goes past the box/ hrough the page, add a scroll bar*/
    /*all the way to the left
     z-index: 1; pushes it on top of the background
-   */
+    */
 
 }
 
@@ -42,24 +42,34 @@ font-weight: normal;
 .nav a{ /*all links in the nav class*/
 
 
-/*padding: 20px, 30px; 20px top bottom, and 30px left right, for some reason it didnt effect it like this.*/
-height: 30px;
-padding-top: 10px;
-font-size: 15px;
-text-decoration: none;
-color: black;
-display: block;
+	/*padding: 20px, 30px; 20px top bottom, and 30px left right, for some reason it didnt effect it like this.*/
+	height: 30px;
+	padding-top: 10px;
+	font-size: 15px;
+	text-decoration: none;
+	color: black;
+	display: block;
 
 
 
 }
 
-.nav a:hover{
-
-	
+.nav a:hover{	
 	background-color: #DCDCDC;
 	/*transition: 0.4s; so it wont go to white right away, there will be a bit of a transition*/
 }
+
+
+.nav .NavBottomLinks{
+	/*need to see how to git rif of the background colour when hovering on these links.*/
+
+	display: inline;
+
+	width: 20px;
+}
+
+
+
 
 .nav .close{
 
@@ -71,8 +81,8 @@ display: block;
 	color: black;
 }
 
-.slide a{ /*for the burger menue, we did this since its in the a tag. all the links in the slide class*/
-	color: #000;
+.slide a{ /*for the burger menue, we did this since its in the a tag. all the links in the slide class NOT SURE WHAT THIS IS FOR NEED TO CHECK AND SEE.*/
+	color: #000; 
 	position: absolute;
 	top: 20px;
 	left: 25px;
@@ -91,8 +101,20 @@ display: block;
 
 }
 
+#overlay {
+  display:  none; /*By defult give it no display.*/
+  position: absolute;
+  width: 1030px; 
+  height: 100%;
+  top: 0;
+  left: 80;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
 
-
+  
+}
 
 #header{
 

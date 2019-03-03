@@ -1,11 +1,13 @@
-// for over lay //www.w3schools.com/howto/howto_js_sidenav.asp
-//Better idea to add a overlay https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_overlay
+
+// look at for overlay 
+//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_overlay
 
 function openSlideMenue(){
 
 	document.getElementById('menu').style.width = '250px';
 	document.getElementById('navContainer').style.marginLeft = '0px';
-	//document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+	document.getElementById("overlay").style.display = "block"; // for the overlay affect.
+	document.body.style.overflow = 'hidden'; // so when the nav bar is out you cant scroll on the body.
 
 
 }
@@ -14,7 +16,8 @@ function openSlideMenue(){
 function closeSlideMenue(){
 	document.getElementById('menu').style.width = '0';
 	document.getElementById('navContainer').style.marginLeft = '0px';
-	//document.body.style.backgroundColor = "white";
+	document.getElementById("overlay").style.display = "none";
+	document.body.style.overflow = 'visible'; 
 
 }
 
